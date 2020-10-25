@@ -1,0 +1,93 @@
+.menu {
+  position: relative;
+  background-color: var(--light-orange);
+  color: #000;
+  
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: var(--font-1);
+}
+
+.menu .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* info */
+.menu .menu__info {
+  display: block;
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.2;
+}
+
+.menu .menu__info .menu__title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* login */
+.menu .menu__login {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 160px;
+  margin: 8px;
+}
+.menu .menu__login .menu__name {
+  font-size: 1.2rem;
+  text-align: end;
+  color: #777;
+}
+.menu .menu__login .menu__name span {
+  font-size: .8rem;
+}
+
+.menu .menu__login .menu__image  {
+  position: relative;
+  z-index: 0;
+}
+.menu .menu__login .menu__image img{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 45px;
+  height: 45px;
+  border: 2px solid var(--orange);
+  border-radius: 50%;
+  object-fit: contain;
+}
+.menu .menu__login .menu__image::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  right: 0px;
+  top: 0px;
+  
+  border-radius:50%;
+  background: var(--light-orange);
+  border: 5px solid var(--orange);
+  width: 15px;
+  height: 15px;
+  z-index: 1;
+}
+
+
+@media (max-width: 1000px) {
+  .menu .menu__info {
+    display: none;
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .menu .menu__login {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .select {
+    display: none;
+  }
+}

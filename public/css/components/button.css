@@ -1,0 +1,49 @@
+.btn {
+  display: inline-block;
+
+  text-transform: capitalize;
+  font-family: var(--font-1);
+  font-size: 1rem;
+  cursor: pointer;
+
+  background-color: var(--light-orange);
+  
+  padding: 4px 8px;
+  outline: 0;
+  
+  border-radius: 5px;
+  border: 4px solid transparent;
+
+  transition: .3s;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.05);
+  border-color: #777;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+  transform: scale(1.05);
+  border-color: rgba(248, 92, 7, 0.9);
+}
+
+.btn.btn-primary {
+  background-color: var(--orange);
+  color: #fff;
+}
+
+.btn + .btn {
+  margin-left: 8px;
+}
+
+.select {
+  background-color: inherit;
+  border-radius: 5px;
+  padding: 4px;
+  outline: 0;
+}
+
+.btn.btn-primary i {
+  margin-right: 8px;
+}

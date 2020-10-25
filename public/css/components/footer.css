@@ -1,0 +1,9 @@
+.copy {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .copy {
+    width: 100%;
+  }
+}
